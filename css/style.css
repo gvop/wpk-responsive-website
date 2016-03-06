@@ -95,6 +95,7 @@ nav > div {
   border-radius: 15px;
   height: 300px;
   overflow: hidden;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 }
 
 
@@ -141,7 +142,9 @@ nav > div {
 /* ====Card background pictures===== */
 .call-out,
 .card,
-.quick-links div:first-child {
+.small-pic-01,
+.small-pic-02,
+.small-pic-03{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -149,33 +152,41 @@ nav > div {
 
 .pic01{
   background-image: url('../images/frambozentaart.jpg');
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 }
 
 .pic02{
   background-image: url('../images/steaming_thee.png');
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 }
 
 .pic03{
   background-image: url('../images/heelhollandbakt_02.jpg');
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-  /*  background-position: -70% 0%*/
 }
 
 .pic04{
   background-image: url('../images/mrjones_thee.jpg');
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 }
 
 .pic05{
   background-image: url('../images/greens.jpg');
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 }
 
 .pic06{
   background-image: url('../images/zeeuwsebolus.jpg');
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.small-pic-01{
+  background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+  url('../images/cofee.png') !important;
+}
+
+.small-pic-02{
+  background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+  url('../images/slowcooking.jpg') !important;
+}
+
+.small-pic-03{
+  background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+  url('../images/funcooking.jpeg') !important;
 }
 
 
@@ -204,10 +215,6 @@ nav > div {
   padding: 15px 0 0 0; 
 }
 
-.quick-links div:first-child{
-  background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
-  url('../images/kneating_dough.jpg');
-}
 
 
 /* =====Sign-up callout===== */
@@ -245,8 +252,10 @@ footer {
   text-align: center;
 }
 
-.footer-text{
+
+.cursive {
   font-size: 1.3rem !important;
+  margin: 2rem 0;
   font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman';
   font-style: italic;
 }
@@ -288,8 +297,10 @@ footer {
 
 /* =====DRY===== */
 
-.cursive {
-  font-style: italic;
+.social-box,
+.main-links i,
+.social-quick-links i {
+  cursor: pointer;
 }
 
 .left {
@@ -355,7 +366,7 @@ footer {
     padding: 5rem 0;
   }
 
-  .wrapper h2 {
+  .top-pic .wrapper h2 {
     font-size: 4rem;
     font-weight: 300;
   }
