@@ -1,3 +1,42 @@
-body {
-  background: red;
+  body {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.container {
+  background: gray;
+  width: 96%;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+/* NAV BAR */
+nav{
+  vertical-align: top;
+}
+
+nav > div {
+  padding: 1rem 0;
+}
+
+#logo,
+#menu{
+  display: inline-block;
+}
+
+#logo{
+  position: relative;
+  width: 79%;
+  top: -10px;
+}
+
+#menu {
+  width: 19%;
+}
+
+#menu i {
+  float: right;
 }
