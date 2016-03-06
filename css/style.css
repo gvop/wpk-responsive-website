@@ -95,9 +95,9 @@ nav > div {
 
 .content{
   box-sizing: border-box;
-  width: 49.5%;
+  width: 50%;
   height: 300px;
-  padding: 0 1rem;
+  padding: 1rem;
   display: inline-block;
   text-align: left;
   vertical-align: top;
@@ -109,6 +109,10 @@ nav > div {
 
 .white .card-teaser{
   color: black;
+}
+
+.white .card-text{
+  color: #d44300
 }
 
 .black {
@@ -130,6 +134,14 @@ nav > div {
 }
 
 /* Card background pictures */
+.call-out,
+.card,
+.quick-links div:first-child {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .pic01{
   background-image: url('../images/frambozentaart.jpg');
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
@@ -140,7 +152,67 @@ nav > div {
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 }
 
+.pic03{
+  background-image: url('../images/heelhollandbakt_02.jpg');
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  background-position: -60% 0%
+}
+
+.pic04{
+  background-image: url('../images/mrjones_thee.jpg');
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+
+
+/* Quick links */
+
+.quick-links div {
+  vertical-align: top;
+  display: inline-block;
+  width: 31%;
+  background: black;
+  border-radius: 15px;
+  height: 100px;
+  color: white;
+
+}
+
+.quick-links p {
+  font-weight: 600;
+  vertical-align: middle;
+  line-height: 65px;
+}
+
+.quick-links div:first-child p{
+  line-height: 20px;
+  padding: 15px 0 0 0; 
+}
+
+.quick-links div:first-child{
+  background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+                    url('../images/kneating_dough.jpg');
+}
+
+
+/* Sign-up callout */
+.sign-up {
+  border-radius: 15px;
+  background-color: white;
+  margin: 2rem 0;
+}
+
+.sign-up p{
+  color: black;
+  display: inline-block;
+}
+
+
 /* === DRY === */
+
+.cursive{
+  font-style: italic;
+}
 
 .left {
   float: left;
@@ -149,16 +221,11 @@ nav > div {
 .right {
   float: right;
 }
-.call-out,
-.card {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
 
 /* red recept color */
+.second-color,
 .content h4{
-  color: #d44300
+  color: #d44300 !important
 }
 
 /* to uppercase */
