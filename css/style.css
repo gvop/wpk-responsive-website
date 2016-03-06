@@ -11,6 +11,7 @@ body section:nth-child(n+3){
 
 .container {
   width: 96%;
+  max-width: 1020px;
   margin: 0 auto;
   text-align: center;
 }
@@ -56,6 +57,11 @@ nav > div {
   text-align: center;
   color: white;
   padding: 1rem 0;
+  background-color: black;
+
+}
+
+.top-pic{
   background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
                     url('../images/kneating_dough.jpg');
 }
@@ -163,6 +169,16 @@ nav > div {
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 }
 
+.pic05{
+  background-image: url('../images/greens.jpg');
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.pic06{
+  background-image: url('../images/zeeuwsebolus.jpg');
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
 
 
 /* Quick links */
@@ -200,17 +216,58 @@ nav > div {
   border-radius: 15px;
   background-color: white;
   margin: 2rem 0;
+  text-align: left;
 }
 
 .sign-up p{
   color: black;
   display: inline-block;
+  padding: 0 10px;
 }
 
+input[type=email]{
+  border-radius: 15px;
+  padding: .3rem;
+  line-height: 3rem;
+  border: 0px;
+  width: 90%;
+}
+:placeholder-shown{
+  color: black;
+}
+
+/* FOOTER */
+
+footer {
+  padding: 2rem 0;
+  background: #ececec;
+  text-align: center;
+}
+
+.social-box{
+  background: white;
+  padding: .7rem 0;
+  margin: .5rem auto;
+  width: 90%;
+  border-radius: 15px;
+}
+
+.social-box i,
+.social-box p {
+  font-size: 1.2rem;
+}
+
+.social-box i {
+  padding: 0 1rem 0 0;
+  
+}
+.social-box p {
+  display: inline-block;
+}
 
 /* === DRY === */
 
-.cursive{
+.cursive {
   font-style: italic;
 }
 
