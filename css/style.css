@@ -48,9 +48,6 @@ nav > div {
   float: right;
 }
 
-/* DRY */
-
-
 /* CALL-OUT */
 
 .call-out {
@@ -222,18 +219,19 @@ nav > div {
 .sign-up p{
   color: black;
   display: inline-block;
+  cursor: pointer;
   padding: 0 10px;
 }
 
 input[type=email]{
-  border-radius: 15px;
-  padding: .3rem;
-  line-height: 3rem;
+  border-radius: 12px;
+  padding: .1rem;
+  line-height: 2.6rem;
   border: 0px;
-  width: 90%;
+  width: 60%;
 }
-:placeholder-shown{
-  color: black;
+input[type=email]:focus{
+    outline: none;
 }
 
 /* FOOTER */
@@ -241,14 +239,23 @@ input[type=email]{
 footer {
   padding: 2rem 0;
   background: #ececec;
+  color: #464646;
   text-align: center;
 }
 
+.footer-text{
+  font-size: 1.3rem !important;
+  font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman';
+  font-style: italic;
+}
+
 .social-box{
+  cursor: pointer;
   background: white;
-  padding: .7rem 0;
+  padding: .5rem 0;
   margin: .5rem auto;
   width: 90%;
+  color: white;
   border-radius: 15px;
 }
 
@@ -263,6 +270,18 @@ footer {
 }
 .social-box p {
   display: inline-block;
+}
+
+.cookandco {
+  background: #1e252b;
+}
+
+.facebook{
+  background: #3b5995;
+}
+
+.pinterest{
+  background:#b8081d;
 }
 
 /* === DRY === */
