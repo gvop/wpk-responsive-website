@@ -1,12 +1,19 @@
-  body {
+
+body {
     width: 400px;
     margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
 }
 
+body section:nth-child(n+3){
+  margin: 2rem auto;
+}
+
+
 .container {
-  background: gray;
   width: 96%;
   margin: 0 auto;
+  text-align: center;
 }
 
 img {
@@ -19,7 +26,7 @@ nav{
 }
 
 nav > div {
-  padding: 1rem 0;
+  padding: .5rem 0 0 0;
 }
 
 #logo,
@@ -30,7 +37,7 @@ nav > div {
 #logo{
   position: relative;
   width: 79%;
-  top: -10px;
+  top: 4px;
 }
 
 #menu {
@@ -39,4 +46,85 @@ nav > div {
 
 #menu i {
   float: right;
+}
+
+/* DRY */
+
+
+/* CALL-OUT */
+
+.call-out {
+  text-align: center;
+  color: white;
+  padding: 1rem 0;
+  background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+                    url('../images/kneating_dough.jpg');
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.wrapper h4 {
+  text-transform: uppercase;
+}
+
+.wrapper h2 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.wrapper p {
+  font-size: .8rem;
+  line-height: 1.4rem;
+}
+
+/* CARDS */
+.card {
+  width: 90%;
+  margin: 0 auto;
+  background: green;
+  border-radius: 15px;
+  height: 210px;
+  overflow: hidden;
+  background-image: url('../images/frambozentaart.jpg');
+}
+
+.picture {
+  position: relative;
+  top:4px;
+  left: -2px;
+  width: 49%;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 18% 10%;
+  background-position: center;
+  margin: 0;
+}
+
+.content{
+  text-align: center;
+  vertical-align: top;
+  width: 49.5%;
+  height: 210px;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.left {
+  float: left;
+}
+
+/* DRY */
+.call-out,
+.card {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.wrapper h4 {
+  text-transform: uppercase;
 }
