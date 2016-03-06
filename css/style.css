@@ -1,6 +1,5 @@
 
 body {
-    width: 400px;
     margin: 0 auto;
     font-family: 'Open Sans', sans-serif;
 }
@@ -87,37 +86,69 @@ nav > div {
   margin: 0 auto;
   background: green;
   border-radius: 15px;
-  height: 210px;
+  height: 300px;
   overflow: hidden;
-  background-image: url('../images/frambozentaart.jpg');
+/*  background-image: url('../images/frambozentaart.jpg');
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);*/
 }
 
-.picture {
-  position: relative;
-  top:4px;
-  left: -2px;
-  width: 49%;
-  box-sizing: border-box;
-  display: inline-block;
-  padding: 18% 10%;
-  background-position: center;
-  margin: 0;
-}
 
 .content{
-  text-align: center;
-  vertical-align: top;
+  box-sizing: border-box;
   width: 49.5%;
-  height: 210px;
+  height: 300px;
+  padding: 0 1rem;
   display: inline-block;
+  text-align: left;
+  vertical-align: top;
+}
+
+.white {
+  background: white;
+}
+
+.white .card-teaser{
+  color: black;
+}
+
+.black {
   background-color: rgba(0, 0, 0, 0.5);
 }
+
+.black .card-teaser, 
+.white .card-teaser {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.black .card-teaser,
+.black .card-text {
+  color: white;
+}
+
+.black .card-text{
+  font-size: .8rem;
+}
+
+/* Card background pictures */
+.pic01{
+  background-image: url('../images/frambozentaart.jpg');
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.pic02{
+  background-image: url('../images/steaming_thee.png');
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+/* === DRY === */
 
 .left {
   float: left;
 }
 
-/* DRY */
+.right {
+  float: right;
+}
 .call-out,
 .card {
   background-size: cover;
@@ -125,6 +156,15 @@ nav > div {
   background-repeat: no-repeat;
 }
 
-.wrapper h4 {
+/* red recept color */
+.content h4{
+  color: #d44300
+}
+
+/* to uppercase */
+.wrapper h4,
+.content h4 {
   text-transform: uppercase;
 }
+
+
