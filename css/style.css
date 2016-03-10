@@ -95,7 +95,6 @@ nav > div {
   border-radius: 15px;
   height: 300px;
   overflow: hidden;
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 }
 
 
@@ -197,7 +196,7 @@ nav > div {
 .quick-links div {
   vertical-align: top;
   display: inline-block;
-  width: 33%;
+  width: 31%;
   background: black;
   border-radius: 15px;
   height: 100px;
@@ -324,6 +323,12 @@ footer {
   text-transform: uppercase;
 }
 
+/* Shadow */
+.card,
+.quick-links div {
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
 
 
 /* =====@Media===== */
@@ -413,6 +418,12 @@ footer {
 
   .social-box p {
     font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  .quick-links div {
+    width: 33%;
   }
 }
 
